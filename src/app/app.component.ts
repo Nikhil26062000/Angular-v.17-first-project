@@ -7,7 +7,18 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styles:`
+  section{
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+
+    li{
+        padding:5px
+    }
+}
+  `
 })
 export class AppComponent {
   title = 'first-project';
