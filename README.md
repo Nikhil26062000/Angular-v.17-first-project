@@ -49,6 +49,9 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 - These are also structural directives
 
+- There are three ways we can add class as well as style  .
+
+
 
 
 
