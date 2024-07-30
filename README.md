@@ -1,3 +1,29 @@
+## Angular Notes 👍
+
+# lecture 1 to 6
+Creating Components: Use the Angular CLI command ng generate component componentName or its shorthand ng g c componentName to create new components.
+
+Using Components Inside Another: Components can be used inside other components in several ways:
+
+As an element: Use the component's selector as a custom HTML element (the default way).
+As an attribute: Apply the component's selector as an attribute on an HTML element.
+As a class: Use the component's selector as a class on an HTML element.
+Templates and Styles:
+
+Templates: Define the component's HTML using templateUrl for external HTML files or template for inline HTML.
+Styles: Define the component's CSS using styleUrls for external CSS files or styles for inline CSS.
+
+# lecture 7 : Data Binding
+- String Interpolation
+- Property Binding
+- Event Binding
+- Two-Way Data Binding
+
+# lecture 8 : String Interpolation
+
+- In this lecture we learn how to use dynamic data from ts file to html file
+
+
 # FirstProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
