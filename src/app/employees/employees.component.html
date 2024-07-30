@@ -32,3 +32,22 @@
     <input [type]="inputType" [placeholder]="placeholderValue" [(ngModel)]="paraText2">
 
     <span [innerText]="paraText2"></span>
+
+    <!-- Directive Concepts -->
+    <h3>ngClass and ngStyle directives</h3>
+        <!-- This is one way to add class  -->
+    <input type="text" placeholder="Enter your marks" [class.green-bg]="true"/>
+        <!-- This is another way to add class -->
+    <div [class]="'container text'">
+        <p>This div contains multiple classes for styling</p>
+    </div>
+        <!-- This is another way to add class  -->
+    <div [class]="{'green-bg':true, 'yellow-text':isYellow,'div-box':true,'blue-text':isBlue}">
+        <p>This div contains multiple classes for styling </p>
+        <button (click)="handle_Toggle_TextColor()"> Toggle Text</button>
+    </div>
+        <!-- This is another way to add class using array -->
+    <div [class]="['container','text']">
+        <p>This div contains multiple classes Using Array </p>
+    </div>
+    

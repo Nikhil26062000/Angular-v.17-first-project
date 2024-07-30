@@ -43,7 +43,11 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 # lecture 14 : @Directive
 
-- @if , @else if , @else
+- @if , @else if , @else : These are structural directives
+
+# lecture 15 : @ngClass and @ngStyle
+
+- These are also structural directives
 
 
 

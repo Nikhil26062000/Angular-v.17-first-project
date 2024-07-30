@@ -1,8 +1,9 @@
+
 section{
     background-color: #333;
-    padding: 20px;
+    padding: 1rem;
     color: #fff;
-    border-radius: 10px;
+    border-radius: .5rem;
 
     li{
         padding:5px
@@ -11,10 +12,10 @@ section{
 
 button{
     background-color: #333;
-    padding: 16px;
+    padding: .8rem;
     color: #fff;
     font-size:16px;
-    border-radius: 10px;
+    border-radius: .3rem;
     border: none;
 
     &:disabled{
@@ -25,12 +26,12 @@ button{
 }
 
 input{
-    margin-top: 20px;
-    padding:15px;
+    margin-top: .5rem;
+    padding:1rem;
     font-size: 14px;
     border: none;
-    border-radius: 10px;
-    width: 200px;
+    border-radius: .2rem;
+    width: 20rem;
     outline: none;
     background-color: #D3D3D3;
 }
@@ -40,6 +41,37 @@ h3{
 }
 
 span{
-    margin-left: 10px;
+    margin-left: 1rem;
 }
+
+.green-bg{
+    background-color: rgb(159, 228, 159)
+}
+.yellow-text{
+    color: yellow;
+}
+.blue-text{
+    color: blue;
+}
+
+.div-box{
+    
+    border-radius: 5px;
+    width: 21rem;
+    padding:1%;
+    margin-top:1%;
+}
+
+.container{
+    background-color:#333;
+    border-radius: 5px;
+    width: 21rem;
+    padding:1%;
+    margin-top:1%;
+
+    &.text{
+        color: white;
+    }
+}
+
 

@@ -15,6 +15,8 @@ export class EmployeesComponent implements OnInit {
   placeholderValue = "Enter your Text"
   paraText = "Hie This is Paragraph"
   paraText2 = "Enter your value"
+  isYellow=true
+  isBlue=false
 
   ngOnInit(): void {
     setTimeout(() =>{
@@ -41,5 +43,10 @@ export class EmployeesComponent implements OnInit {
     this.paraText = inputEvent.value
     // above commented code is short hand way to write 
     
+  }
+
+  handle_Toggle_TextColor(){
+    this.isYellow = !this.isYellow
+    this.isBlue = !this.isBlue
   }
 }
