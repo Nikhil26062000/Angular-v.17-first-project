@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: '[app-employees]',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './employees.component.html',
   styleUrl: './employees.component.scss'
 })
@@ -15,6 +15,7 @@ export class EmployeesComponent implements OnInit {
   inputType = "text"
   placeholderValue = "Enter your Text"
   paraText = "Hie This is Paragraph"
+  paraText2 = "Enter your value"
 
   ngOnInit(): void {
     setTimeout(() =>{

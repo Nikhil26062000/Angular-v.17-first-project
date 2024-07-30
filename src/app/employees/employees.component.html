@@ -25,3 +25,10 @@
     <p [innerText]="paraText"></p>
 
     <button (click)="addData($event)">Button with event binding : Add Data</button>
+
+    <!-- TWO WAY DATA BINDING CONCEPT -->
+    <h3> Two way Data binding Concept</h3>
+
+    <input [type]="inputType" [placeholder]="placeholderValue" [(ngModel)]="paraText2">
+
+    <span [innerText]="paraText2"></span>

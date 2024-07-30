@@ -33,6 +33,9 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 # lecture 11 : typecasting event binding
 
+# lecture 12 : Two way Data Binding
+
+- Two-way data binding in Angular allows for the automatic synchronization of data between the component class and the template (view). This means that any changes in the UI elements will update the corresponding model in the component, and vice versa.
 
 
 
