@@ -10,7 +10,6 @@ import { FormsModule } from '@angular/forms';
 export class EmployeesComponent implements OnInit {
   firstName = "Nikhil"
   lastName = "Raj"
-
   isDisabled = true
   inputType = "text"
   placeholderValue = "Enter your Text"
