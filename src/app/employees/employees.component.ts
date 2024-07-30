@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 @Component({
-  selector: '[app-employees]',
+  selector: 'app-employees',
   standalone: true,
   imports: [FormsModule],
   templateUrl: './employees.component.html',

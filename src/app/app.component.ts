@@ -12,4 +12,6 @@ import { EmployeesComponent } from './employees/employees.component';
 })
 export class AppComponent {
   title = 'first-project';
+  mainComponent=true
+  secondaryComponent=true
 }

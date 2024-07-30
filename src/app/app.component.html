@@ -1,4 +1,12 @@
-<div app-employees></div>
+<div>
+        @if(mainComponent){
+                <app-employees></app-employees>
+        }@else if(secondaryComponent){
+                <p>Else if Paragraph Running !</p>
+        }@else{
+                <p>Else paragraph Running !</p>
+        }
+</div>
 
 <!--
      we can also use 'app-employees' as class . we just have to do some slight changes.
