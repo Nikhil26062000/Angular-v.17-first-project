@@ -26,15 +26,20 @@ export class EmployeesComponent implements OnInit {
     return this.lastName
   }
 
-  addData(event:any){
+  addData(event:MouseEvent){
     console.log("Data added Successfully");
     console.log("Event value",event);
     
     
   }
 
-  showInputValue(event:any){
-    this.paraText = event.target.value;
+  showInputValue(event:Event){
+    // this.paraText = (event.target as HTMLInputElement).value;
+    //! below is another way to do this
+
+    const inputEvent = event.target as HTMLInputElement
+    this.paraText = inputEvent.value
+    // above commented code is short hand way to write 
     
   }
 }

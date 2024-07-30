@@ -31,6 +31,9 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 - we can use event binding on clicking the button. There are other event also
 
+# lecture 11 : typecasting event binding
+
+
 
 
 
