@@ -1,9 +1,19 @@
-<section>
-    <p>Employee Lists</p>
-    <ul>
-        <li>Amit</li>
-        <li>Sumit</li>
-        <li>Avinash</li>
+<div app-employees></div>
 
-    </ul>
-</section>
+<!--
+     we can also use 'app-employees' as class . we just have to do some slight changes.
+     CHANGES ARE :
+        we have to add class keyword in div here . eg : <div class="app-employees"></div>
+
+        we have to do changes in employess.components.ts file also
+        changes are:
+        
+        @Component({
+        selector: '.app-employees',
+        standalone: true,
+        imports: [],
+        templateUrl: './employees.component.html',
+        styleUrl: './employees.component.scss'
+        }) 
+    
+-->
