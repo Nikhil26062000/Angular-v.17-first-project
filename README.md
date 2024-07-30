@@ -41,6 +41,10 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 - Normal Introduction
 
+# lecture 14 : @Directive
+
+- @if , @else if , @else
+
 
 
 
