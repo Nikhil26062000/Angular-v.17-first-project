@@ -20,6 +20,8 @@
     <button [disabled]="isDisabled">Add Employee</button>
 
     <br/>
-    <input [type]="inputType" [placeholder]="placeholderValue">
+    <input [type]="inputType" [placeholder]="placeholderValue" (input)="showInputValue($event)">
 
     <p [innerText]="paraText"></p>
+
+    <button (click)="addData($event)">Button with event binding : Add Data</button>

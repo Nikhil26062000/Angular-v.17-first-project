@@ -25,4 +25,16 @@ export class EmployeesComponent implements OnInit {
   getName(){
     return this.lastName
   }
+
+  addData(event:any){
+    console.log("Data added Successfully");
+    console.log("Event value",event);
+    
+    
+  }
+
+  showInputValue(event:any){
+    this.paraText = event.target.value;
+    
+  }
 }
