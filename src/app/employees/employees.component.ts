@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: '[app-employees]',
@@ -7,7 +7,22 @@ import { Component } from '@angular/core';
   templateUrl: './employees.component.html',
   styleUrl: './employees.component.scss'
 })
-export class EmployeesComponent {
+export class EmployeesComponent implements OnInit {
   firstName = "Nikhil"
   lastName = "Raj"
+
+  isDisabled = true
+  inputType = "text"
+  placeholderValue = "Enter your Text"
+  paraText = "Hie This is Paragraph"
+
+  ngOnInit(): void {
+    setTimeout(() =>{
+      this.isDisabled = false
+    },3000)
+  }
+
+  getName(){
+    return this.lastName
+  }
 }

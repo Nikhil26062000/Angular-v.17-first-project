@@ -14,3 +14,12 @@
     <p> Hey How are you ! {{firstName}} {{lastName}} . {{"This is string"}}</p>
 
     <p> {{firstName ? "Name Found" : "Name not fund"}}</p>
+
+    <p>{{getName()}}</p>
+
+    <button [disabled]="isDisabled">Add Employee</button>
+
+    <br/>
+    <input [type]="inputType" [placeholder]="placeholderValue">
+
+    <p [innerText]="paraText"></p>

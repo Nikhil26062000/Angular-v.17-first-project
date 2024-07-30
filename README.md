@@ -23,6 +23,46 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 - In this lecture we learn how to use dynamic data from ts file to html file
 
+# lecture 9 : Property Binding
+
+- In this lecture we learn how to use property binding .
+
+# lecture 10 : Event Binding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # FirstProject
 

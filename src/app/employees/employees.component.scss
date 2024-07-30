@@ -9,3 +9,18 @@ section{
     }
 }
 
+button{
+    background-color: #333;
+    padding: 16px;
+    color: #fff;
+    font-size:16px;
+    border-radius: 10px;
+    border: none;
+
+    &:disabled{
+        background-color: #D3D3D3;
+
+    }
+
+}
+
