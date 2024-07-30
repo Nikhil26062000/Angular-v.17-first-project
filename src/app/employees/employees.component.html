@@ -34,7 +34,7 @@
     <span [innerText]="paraText2"></span>
 
     <!-- Directive Concepts -->
-    <h3>ngClass and ngStyle directives</h3>
+    <h3>ngClass directives</h3>
         <!-- This is one way to add class  -->
     <input type="text" placeholder="Enter your marks" [class.green-bg]="true"/>
         <!-- This is another way to add class -->
@@ -50,4 +50,40 @@
     <div [class]="['container','text']">
         <p>This div contains multiple classes Using Array </p>
     </div>
+
+    <!-- ngStyle -->
+    <h3>ngStyle directive</h3>
+        <!-- Styling using style -->
+    <div [style.background-color]="'rgb(159, 228, 159)'">
+        <p>This div contains styling using style</p>
+        <p>In this way we can set single style property</p>
+    </div>
+        <!-- Another way to use style -->
+    <div [style]="'background-color:#333;color:yellow;padding:.3rem;border-radius:.5rem'">
+        <p>This div contains styling using style</p>
+        <p>In this way we can set multiple style property using string</p>
+    </div>
+        <!-- Another way to use style using condtion -->
+    <div [style]="{'background-color':isYellow ? 'rgb(159, 228, 159)':'blue','color':'purple','padding':'5px','marginTop':'5px'}">
+            <p>This div contains styling using style</p>
+            <p>In this way we can set multiple style property using object</p>
+    </div>
+
+
+
+<!-- Here i  have use style for adding multiple styles but chatgpt and gemini is saying that i should use ngStyle instead of style. Below are the data from chatgpt -->
+
+
+<!-- 
+Directive Choice:
+
+Use [ngStyle] to bind an object containing multiple style properties.
+[style] is used for binding a single style property with a specific value.
+Style Property Format:
+
+Within the object for [ngStyle], you can use either kebab-case (e.g., 'background-color') or camelCase (e.g., 'backgroundColor') for the CSS property names.
+No [style] with Object:
+
+The Angular framework does not support the syntax [style]="{...}" for setting multiple properties. Instead, [ngStyle] must be used.
+     -->
     
