@@ -1,9 +1,10 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { HighlightDirective } from '../../shared/component/table/directives/highlight.directive';
 
 @Component({
   selector: 'app-main-header',
   standalone: true,
-  imports: [],
+  imports: [HighlightDirective],
   templateUrl: './main-header.component.html',
   styleUrl: './main-header.component.scss',
 })

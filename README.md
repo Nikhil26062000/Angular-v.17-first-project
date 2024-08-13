@@ -63,6 +63,13 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 - Passing data from pparent to child components
 
+# lecture 20 : @Input decorator : how to fetch param value
+
+# lecture 21 : @Output decorator
+
+- passing data from child components to parent components
+
+# lecture 22 : Creating own directive
 
 
 
