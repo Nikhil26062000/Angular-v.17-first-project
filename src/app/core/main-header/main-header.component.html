@@ -1,1 +1,18 @@
-<p>main-header works!</p>
+<header>
+    <div class="logo">
+      <h1>{{logoName}}</h1>
+    </div>
+    <div class="nav-items">
+      <div class="dropdown">
+        <button class="dropdown-toggle">Select Language</button>
+        <ul class="dropdown-menu">
+          <li (click)="getLanguage('en')">English</li>
+          <li (click)="getLanguage('es')">Spanish</li>
+          <li (click)="getLanguage('fr')">French</li>
+          <!-- Add more languages as needed -->
+        </ul>
+      </div>
+      <button class="logout-button">Logout</button>
+    </div>
+  </header>
+  

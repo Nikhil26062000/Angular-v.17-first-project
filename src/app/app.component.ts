@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { EmployeesComponent } from './employees/employees.component';
+
 import { MainHeaderComponent } from './core/main-header/main-header.component';
 import { MainFooterComponent } from './core/main-footer/main-footer.component';
 import { TableComponent } from './shared/component/table/table.component';
@@ -18,4 +17,11 @@ export class AppComponent {
   title = 'first-project';
   mainComponent=true
   secondaryComponent=true
+
+  logoTitle : string = 'Employee Admin'
+
+  getLang(lang : string){
+    console.log(lang);
+    
+  }
 }

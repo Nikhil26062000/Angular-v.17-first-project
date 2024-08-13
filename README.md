@@ -57,6 +57,12 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 # lecture 17 : Started Project
 
+# lecture 18 : Breaking up into components
+
+# lecture 19 : @input decorator
+
+- Passing data from pparent to child components
+
 
 
 

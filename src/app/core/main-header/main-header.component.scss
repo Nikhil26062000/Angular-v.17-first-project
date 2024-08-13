@@ -1,0 +1,86 @@
+header {
+    background-color: #333; 
+    color: white;
+    // padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  
+    h1 {
+      margin-left: 10px;
+      font-size: 24px;
+    }
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+  
+    .dropdown {
+      position: relative;
+  
+      .dropdown-toggle {
+        background-color: #28a745; /* Matches the main background */
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #218838; /* Darker green on hover */
+        }
+      }
+  
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #006837; /* Darker green */
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+        li {
+          padding: 10px;
+          color: white;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #004d40; /* Even darker green on hover */
+          }
+        }
+      }
+  
+      &:hover .dropdown-menu {
+        display: block;
+      }
+    }
+  
+    .logout-button {
+      padding: 5px 10px;
+      background-color: #dc3545; /* Red color for logout */
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+  
+      &:hover {
+        background-color: #c82333; /* Darker red on hover */
+      }
+    }
+  }
+  
