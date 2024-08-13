@@ -55,6 +55,8 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 - $index, $first , $last , $even , $odd , $count
 
+# lecture 17 : Started Project
+
 
 
 
