@@ -77,4 +77,20 @@ span{
     }
 }
 
+p{
+    &.first-ele{
+        color: rgb(205, 195, 0);
+    }
+    &.last-ele{
+        color: pink;
+    }
+    &.even-ele{
+        color:blue;
+
+    }
+    &.odd-ele{
+        color: purple;
+    }
+}
+
 

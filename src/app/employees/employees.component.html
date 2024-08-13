@@ -87,3 +87,12 @@ No [style] with Object:
 The Angular framework does not support the syntax [style]="{...}" for setting multiple properties. Instead, [ngStyle] must be used.
      -->
     
+<section>
+    <p>List of Employee</p>
+    @for(emp of employees; track emp.id; let index = $index; let count = $count; let first = $first; let last = $last; let even = $even ; let odd = $odd){
+        <p [class]="{'first-ele':first,'last-ele':last,'even-ele':even,'odd-ele':odd}">{{index}} {{ emp.first_name }} {{count}}</p>
+    }
+    @empty{
+        <p>No data found</p>
+    }
+</section>
