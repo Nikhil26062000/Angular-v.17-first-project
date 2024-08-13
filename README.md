@@ -71,6 +71,10 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 # lecture 22 : Creating own directive
 
+# lecture 23 : renderer
+
+# lecture 24 : HostListener
+
 
 
 
