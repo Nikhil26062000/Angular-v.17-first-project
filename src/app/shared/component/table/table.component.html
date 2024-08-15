@@ -1,11 +1,11 @@
 <table class="employee-table">
     <thead>
       <tr>
-        <th>Full Name</th>
-        <th>Age</th>
-        <th>Date of Joining</th>
-        <th>Department</th>
-        <th>Salary</th>
+        <th>Name</th>
+        <th>phone</th>
+        <th>username </th>
+        <th>website</th>
+        <th>city</th>
         <th>Action</th>
       </tr>
     </thead>
@@ -13,11 +13,11 @@
       <!-- Add your table rows here -->
     @for(data of employees; track data.id ){
       <tr>
-        <td>{{data.first_name}}</td>
-        <td>{{data.age}}</td>
-        <td>{{data.gender}}</td>
-        <td>{{data.department}}</td>
-        <td>{{data.salary}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.phone}}</td>
+        <td>{{data.username}}</td>
+        <td>{{data.website}}</td>
+        <td>{{data.address.city}}</td>
         <td><button>Edit</button> <button>Delete</button></td>
       </tr>
     }
