@@ -75,6 +75,11 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 # lecture 24 : HostListener
 
+# lecture 25 : HostBinding
+
+# lecture 26 : Service
+
+# lecture 27 : Service (get data from server/API)
 
 
 
