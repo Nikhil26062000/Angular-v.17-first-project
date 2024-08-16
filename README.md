@@ -91,6 +91,12 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 # lecture 32 : keyvalue pipe
 
+# lecture 33 : async pipe
+
+# lecture 34 : date pipe
+
+# lecture 35 : currency pipe
+
 
 
 
