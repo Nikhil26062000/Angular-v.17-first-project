@@ -81,6 +81,10 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 # lecture 27 : Service (get data from server/API)
 
+# lecture 28 : rxjs pipe() 
+
+# lecture 29 : search employee functionality
+
 
 
 

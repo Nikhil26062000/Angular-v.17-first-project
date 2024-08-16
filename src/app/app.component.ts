@@ -7,7 +7,6 @@ import { AddEmployeeFormComponent } from './components/add-employee-form/add-emp
 import { AppService } from './shared/services/app.service';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,8 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
     MainFooterComponent,
     TableComponent,
     AddEmployeeFormComponent,
-    HttpClientModule
-   
+    HttpClientModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss', './external.component.scss'],
@@ -29,13 +27,15 @@ export class AppComponent implements OnInit {
   secondaryComponent = true;
   logoTitle: string = 'Employee Admin';
   employeesData: any[] = [];
+  filteredData: any[] = [];
 
   ngOnInit(): void {
     this.appService.getEmployees().subscribe({
       next: (emp: any[]) => {
         console.log(emp);
-        
+
         this.employeesData = emp;
+        this.filteredData = emp;
       },
       error: (err) => {
         console.log(err);
@@ -49,4 +49,14 @@ export class AppComponent implements OnInit {
   }
 
   constructor(private appService: AppService) {}
+
+  searchEmployee(event: Event) {
+    const searchText = (event.target as HTMLInputElement).value;
+    // console.log(searchText);
+
+    this.filteredData = this.employeesData.filter((ele) =>
+      ele.name.toLowerCase().includes(searchText.toLowerCase())
+    );
+    // console.log('New filtered data', this.filteredData);
+  }
 }

@@ -8,6 +8,10 @@
         <th>city</th>
         <th>Action</th>
       </tr>
+
+ 
+     
+
     </thead>
     <tbody>
       <!-- Add your table rows here -->
@@ -20,7 +24,12 @@
         <td>{{data.address.city}}</td>
         <td><button>Edit</button> <button>Delete</button></td>
       </tr>
+      
     }
+    @empty{
+      <p>NO RECORD FOUND</p>
+    }
+   
 
      
     </tbody>
