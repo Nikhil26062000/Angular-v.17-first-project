@@ -38,7 +38,10 @@
   <input  type="text" (input)="searchEmployee($event)" placeholder="Search employee"/>
 </section>
 
-  <app-table [employees]="filteredData"></app-table>
+@if((filteredData$ | async); as filteredData){
+ <app-table [employees]="filteredData"></app-table>
+}
+ 
   
   <app-main-footer></app-main-footer>
 </div>

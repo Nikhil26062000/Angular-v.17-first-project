@@ -6,6 +6,8 @@ import { TableComponent } from './shared/component/table/table.component';
 import { AddEmployeeFormComponent } from './components/add-employee-form/add-employee-form.component';
 import { AppService } from './shared/services/app.service';
 import { HttpClientModule } from '@angular/common/http';
+import { Observable, map, startWith } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     TableComponent,
     AddEmployeeFormComponent,
     HttpClientModule,
+    CommonModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss', './external.component.scss'],
@@ -26,22 +29,12 @@ export class AppComponent implements OnInit {
   mainComponent = true;
   secondaryComponent = true;
   logoTitle: string = 'Employee Admin';
-  employeesData: any[] = [];
-  filteredData: any[] = [];
+  employeesData$!: Observable<any[]>;
+  filteredData$!: Observable<any[]>;
 
   ngOnInit(): void {
-    this.appService.getEmployees().subscribe({
-      next: (emp: any[]) => {
-        console.log(emp);
-
-        this.employeesData = emp;
-        this.filteredData = emp;
-      },
-      error: (err) => {
-        console.log(err);
-      },
-      complete: () => {},
-    });
+    this.employeesData$ = this.appService.getEmployees()
+    this.filteredData$ = this.appService.getEmployees()
   }
 
   getLang(lang: string) {
@@ -52,11 +45,11 @@ export class AppComponent implements OnInit {
 
   searchEmployee(event: Event) {
     const searchText = (event.target as HTMLInputElement).value;
-    // console.log(searchText);
+    console.log(this.employeesData$);
 
-    this.filteredData = this.employeesData.filter((ele) =>
-      ele.name.toLowerCase().includes(searchText.toLowerCase())
-    );
-    // console.log('New filtered data', this.filteredData);
+    this.filteredData$ = this.employeesData$.pipe(
+      map((ele)=>ele.filter((ele)=>ele.name.toLowerCase().includes(searchText.toLowerCase()))),
+      startWith([])
+    )
   }
 }
