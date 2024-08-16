@@ -10,5 +10,7 @@ import { Component, Input } from '@angular/core';
 })
 export class TableComponent {
 
+  start = 0;
+  end = 5;
   @Input() employees:any[] = [];
 }

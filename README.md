@@ -85,6 +85,12 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 # lecture 29 : search employee functionality
 
+# lecture 30 : Pipes in angular
+
+# lecture 31 : slice pipe 
+
+# lecture 32 : keyvalue pipe
+
 
 
 
