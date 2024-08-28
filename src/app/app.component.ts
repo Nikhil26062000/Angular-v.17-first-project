@@ -8,6 +8,7 @@ import { AppService } from './shared/services/app.service';
 import { HttpClientModule } from '@angular/common/http';
 import { Observable, map, startWith } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,8 @@ import { CommonModule } from '@angular/common';
     TableComponent,
     AddEmployeeFormComponent,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    RouterOutlet
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss', './external.component.scss'],

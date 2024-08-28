@@ -97,7 +97,17 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 # lecture 35 : currency pipe
 
-# lecture 36 : percent pipe
+# lecture 36 : percent pip
+
+# lecture 37 && 38 : i18nSelect pipe
+
+# lecture 39 : i18nPlural pipe
+
+# lecture 40 : Routing
+
+# lecture 41 : set and get title
+
+
 
 
 
