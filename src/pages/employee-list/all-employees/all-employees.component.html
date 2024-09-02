@@ -1,0 +1,11 @@
+<section class="search_section">
+    <input
+      type="text"
+      (input)="searchEmployee($event)"
+      placeholder="Search employee"
+    />
+  </section>
+  @if((filteredData$ | async); as filteredData){
+  <app-table [employees]="filteredData"></app-table>
+  }
+  

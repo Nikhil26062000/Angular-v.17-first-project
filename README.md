@@ -107,6 +107,13 @@ Styles: Define the component's CSS using styleUrls for external CSS files or sty
 
 # lecture 41 : set and get title
 
+# lecture 42 : wildcard route
+
+# lecture 43 : lazy loading route
+
+# lecture 44 : lazy loading children route
+
+# lecture 45 : nested route or child route
 
 
 

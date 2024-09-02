@@ -27,21 +27,5 @@
 -->
 <router-outlet></router-outlet>
 <div class="Main-app">
-  <app-main-header
-    [headerLogo]="logoTitle"
-    (language)="getLang($event)"
-  ></app-main-header>
-
-  <app-add-employee-form></app-add-employee-form>
-
-  <section class="search_section">
-  <input  type="text" (input)="searchEmployee($event)" placeholder="Search employee"/>
-</section>
-
-@if((filteredData$ | async); as filteredData){
- <app-table [employees]="filteredData"></app-table>
-}
  
-  
-  <app-main-footer></app-main-footer>
 </div>
