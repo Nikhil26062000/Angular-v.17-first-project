@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable, map, startWith } from 'rxjs';
 import { TableComponent } from '../../../app/shared/component/table/table.component';
 import { AppService } from '../../../app/shared/services/app.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-all-employees',
@@ -23,15 +24,25 @@ export class AllEmployeesComponent implements OnInit {
   filteredData$!: Observable<any[]>;
 
   ngOnInit(): void {
-    this.employeesData$ = this.appService.getEmployees();
-    this.filteredData$ = this.appService.getEmployees();
+    // this.employeesData$ = this.appService.getEmployees();
+    // this.filteredData$ = this.appService.getEmployees();
+    this.activatedRoute.data.subscribe((data=>console.log(data)
+    
+    ))
+
+    this.employeesData$ = this.activatedRoute.data.pipe(
+      map((data)=>data['employessData'])
+    )
+
+    this.filteredData$ = this.employeesData$
+
   }
 
   getLang(lang: string) {
     console.log(lang);
   }
 
-  constructor(private appService: AppService) {}
+  constructor(private activatedRoute: ActivatedRoute) {}
 
   searchEmployee(event: Event) {
     const searchText = (event.target as HTMLInputElement).value;
